@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="cs">
+    <head>
+        <title>Responzivní formulář</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <header class="bg-danger p-3 text-center">
+            <h1 class="display-3 text-light">Responzivní formulář</h1>
+        </header>
+        <main>
+            <h2 class="text-center mt-3 mb-3">Formulář studenta</h2>
+            <form action=""></form>
+            <div class="container">
+                <form>
+                    <div class="mb-3 row">
+                        <label
+                            for="inputName"
+                            class="col-md-3 col-form-label"
+                            >Jméno studenta</label
+                        >
+                        <div
+                            class="col-md-9"
+                        >
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="jmenoStudent"
+                                id="jmenoStudent"
+                                placeholder="Zadej jméno"
+                            />
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label
+                            for="inputName"
+                            class="col-md-3 col-form-label"
+                            >Datum narození</label
+                        >
+                        <div
+                            class="col-md-9"
+                        >
+                            <input
+                                type="date"
+                                class="form-control"
+                                name="datumNarození"
+                                id="jmenoStudent"
+                                placeholder="Zadej datum"
+                            />
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label
+                            for="Email"
+                            class="col-md-3 col-form-label"
+                            >Email</label
+                        >
+                        <div
+                            class="col-md-9"
+                        >
+                            <input
+                                type="email"
+                                class="form-control"
+                                name="Email"
+                                id="Email"
+                                placeholder="mailbox@example.com"
+                            />
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label
+                            for="inputName"
+                            class="col-md-3 col-form-label"
+                            >Heslo</label
+                        >
+                        <div
+                            class="col-md-9"
+                        >
+                            <input
+                                type="password"
+                                class="form-control"
+                                name="Heslo"
+                                id="Heslo"
+                                placeholder="Zadej heslo"
+                            />
+                        </div>
+                    </div>
+                    <fieldset class="mb-3 row">
+                        <legend
+                            class="col-form-legend col-4"
+                        >
+                           Pohlaví
+                        </legend>
+                        <div
+                            class="col-8"
+                        >
+                            <div class="form-check form-check-inline">
+                                <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="gender"
+                                    id="male"
+                                    value="muž"
+                                />
+                                <label class="form-check-label" for="male">Muž</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="gender"
+                                    id="woman"
+                                    value="žena"
+                                />
+                                <label class="form-check-label" for="woman">Žena</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="gender"
+                                    id="nonbinary"
+                                    value="nebinární"
+                                    
+                                />
+                                <label class="form-check-label" for="nonbinary">Nebinární</label>
+                            </div>
+                            
+                        </div>
+                        <div class="col-12 alert alert-info collapse">
+                            Nápověda: Nebinární lidé nezapadají mezi muže ani ženy.
+                        </div>
+                    </fieldset>
+                    <fieldset class="mb-3 row">
+                        <legend
+                            class="col-form-legend col-4"
+                        >
+                           Preferované prohlížeče
+                        </legend>
+                        <div
+                            class="col-8"
+                        >
+                            <div class="form-check form-check-inline">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    name="chrome"
+                                    id="chrome"
+                                    value="Google Chrome"
+                                    checked="checked"
+                                />
+                                <label class="form-check-label" for="chrome">Google Chrome</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    name="firefox"
+                                    id="firefox"
+                                    value="Mozzila Firefox"
+                                />
+                                <label class="form-check-label" for="firefox">Mozzila firefox</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    name="edge"
+                                    id="edge"
+                                    value="MS-Edge"
+                                    
+                                />
+                                <label class="form-check-label" for="edge">MS-Edge</label>
+                            </div>
+                            
+                        </div>
+                    </fieldset>
+                    <div class="mb-3 row">
+                        <label for="poznamka" class="col-sm-3 col-form-label">Poznámka</label>
+                        <div class="col-sm-9">
+                                <textarea class="form-control" name="Poznámka" id="poznamka" rows="5"></textarea>
+                            </div>
+                            
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="foto" class="col-sm-3 col-form-label">Fotka</label>
+                            <div class="col-sm-9">
+                                <input type="file" class="form-control" name="foto" id="foto">
+                                    
+                                </div>
+                                
+                            </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="offset-sm-4 col-sm-8">
+                            <button type="submit" class="btn btn-primary">
+                                Odeslat
+                            </button>
+                            <button type="button" class="btn btn-info" data-bs-toggle="collapse" data-bs-target=".alert">Nápovědy</button>
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
+                                O autorovi
+                              </button>
+                              
+                        </div>
+                    </div>
+                    <!-- Button to Open the Modal -->
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">O autorovi</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          Mé jméno je Petr Vítek , studuji na SSPU , obor IT.
+          Tato stránka je takový test mých dovedností. Rád spím, trávím čas s lidmi které mám rád a jím.
+          Moc mi nejde programování v jazyce C (snažím se to doučit), ale HTML a Bootstrap me dost baví.
+          <img src="../form/img/Juvenile_Ragdoll.jpg" alt="Ja" class="img img-fluid">
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-succes" data-bs-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+                </form>
+            </div>
+            
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
